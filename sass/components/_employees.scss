@@ -1,0 +1,55 @@
+.employees {
+	margin: auto;
+	padding: 94px 0;
+	background-color: var(--accent-background-color);
+}
+
+.employees__title {
+	padding-bottom: 50px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.employees__list {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	margin-top: calc(-1 * var(--card-set-gap));
+	margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.employees__card {
+	border-radius: 4px;
+	background-color: var(--primary-text-color-theme-dark);
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+
+	flex-basis: calc(100% / 4 - var(--card-set-gap));
+	margin-left: var(--card-set-gap);
+	margin-top: var(--card-set-gap);
+}
+
+.employees__content {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.employees__name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.employees__position {
+	margin-top: 10px;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--secondary-text-color-theme-light);
+}

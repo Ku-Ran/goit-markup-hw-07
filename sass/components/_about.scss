@@ -1,0 +1,13 @@
+.about {
+	margin: auto;
+	padding: 94px 0;
+}
+
+.about__items {
+	display: flex;
+	gap: 30px;
+}
+
+.about__card {
+	flex-basis: calc((100% - 3 * 30px) / 4);
+}

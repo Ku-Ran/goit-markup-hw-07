@@ -1,0 +1,163 @@
+.modal-form__list {
+	margin-bottom: 20px;
+}
+
+.modal-form__group {
+	display: flex;
+	align-items: flex-start;
+	justify-content: left;
+	flex-direction: column;
+	margin-bottom: 10px;
+
+	&:last-child {
+		margin-bottom: 0px;
+	}
+}
+
+.modal-form__label {
+	display: block;
+	margin-bottom: 4px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+	color: var(--secondary-text-color-theme-light);
+}
+
+.modal-form__wrapper {
+	position: relative;
+}
+
+.modal-form__field {
+	width: 448px;
+	height: 40px;
+	padding: 12px 42px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	outline: 1px solid transparent;
+	transition: outline 250ms var(--timing-function);
+
+	&:focus {
+		outline-color: var(--accent-color);
+	}
+}
+
+.modal-form__icon {
+	position: absolute;
+	top: 29%;
+	left: 12px;
+	fill: var(--basic-text-color);
+
+	transition: fill 250ms var(--timing-function);
+}
+
+.modal-form__message {
+	resize: none;
+	width: 448px;
+	height: 120px;
+	padding: 12px 16px;
+	/* margin-bottom: 20px; */
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	outline: 1px solid transparent;
+	transition: outline 250ms var(--timing-function);
+
+	&:focus {
+		outline-color: var(--accent-color);
+	}
+
+	&::placeholder {
+		color: var(--placeholder-text-color);
+	}
+}
+
+.modal-form__field:focus + .modal-form__icon {
+	fill: var(--accent-color);
+}
+
+.modal-form__checkbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.modal-form__checkbox-group {
+	appearance: none;
+	position: absolute;
+
+	&:focus + .modal-form__checkbox-icon {
+		border-color: var(--accent-color);
+	}
+}
+
+.modal-form__checkbox-icon:focus {
+	fill: currentColor;
+	border-color: var(--accent-color);
+}
+
+.uncheck {
+	opacity: 1;
+	transition: opacity 250ms var(--timing-function);
+
+	&:focus {
+		fill: currentColor;
+		border-color: var(--accent-color);
+	}
+}
+
+.modal-form__checkbox-group:checked + .modal-form__checkbox-icon .uncheck {
+	opacity: 0;
+}
+
+.check {
+	opacity: 0;
+	transition: opacity 250ms var(--timing-function);
+}
+
+.modal-form__checkbox-group:checked + .modal-form__checkbox-icon .check {
+	opacity: 1;
+}
+
+.modal-form__checkbox-text {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	color: var(--secondary-text-color-theme-light);
+	user-select: none;
+}
+
+.modal-form__checkbox-link {
+	color: var(--accent-color);
+	text-underline-offset: 3px;
+}
+
+.modal-form__btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	width: 200px;
+	margin: 0;
+	padding: 0;
+	background: var(--accent-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: var(--accent-color);
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+	color: var(--primary-text-color-theme-dark);
+
+	transition: background-color 250ms var(--timing-function);
+
+	&:hover {
+		background-color: #188ce8;
+	}
+}

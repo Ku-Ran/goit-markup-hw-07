@@ -1,0 +1,27 @@
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+@import "./base/base";
+@import "./base/reset";
+
+@import "./components/logo";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/modal";
+@import "./components/modal-form";
+@import "./components/about";
+@import "./components/features";
+@import "./components/functional";
+@import "./components/employees";
+@import "./components/socials";
+@import "./components/clients";
+@import "./components/filter";
+@import "./components/work";
+@import "./components/footer";
+@import "./components/socials-footer";
+@import "./components/join";
+@import "./components/footer-form";
+
+
